@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anja Simić</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo3.png" class="logo" alt="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#thebasics">Basics</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">Likes</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa fa-solid fa-arrow-right" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Computer Science Student</p>
+                    <h1>Hi there, I'm <span>Anja</span> <br> from Serbia :)</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-----------------The Basics----------------->
+
+        <div id="thebasics">
+            <div class="container">
+                <p>
+                    <h1 class="sub">The Basics</h1>
+
+                    <div class="tab-titles">
+                        <!---so I want the Skills tab to be automatically active-->
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience </p>
+                        <p class="tab-links" onclick="opentab('education')"> Education </p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages: Python, Java, JavaScript, ReasonML, C, C++</span><br></li>
+                            <li><span>Frameworks: NodeJS, React, Flask, MongoDB, PineconeDB, AlloyDB, Bootstrap</span><br></li>
+                            <li><span>Developer Tools: GCP, Git/Github, OpenAI, Thunder Client/Postman</span><br></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>SWE Intern @ Dextego</span><br></li>
+                            <li><span>IR Analyst Intern @ Lovell Minnick Partners</span><br></li>
+                            <li><span>Computer Science Intern @ Nature Up North</span><br></li>
+                            <li><span>Student Technician & Help Desk Worker @ St. Lawrence IT Department</span><br></li>
+                            <li><span>Student Mentor @ St. Lawrence Peterson Quantitative Resource Center</span><br></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>St. Lawrence University - Computer Science major, Math minor</span><br></li>
+                            <li><span>United World College of the Adriatic - Bilingual International Baccalaureate Diplomma</span><br></li>
+                            <li><span>Gimnazija "Svetozar Marković", Niš</span><br></li>
+                        </ul>
+                    </div>
+                </p>
+            </div>
+        </div>
+
+        <!-------about------->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/empire.png" alt="picture of Anja" id="empire">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub">About me</h1>
+
+                        <p class="paragraph">I am currently pursing a bachelor's degree in Computer Science at St. Lawrence University (SLU).
+
+                            Prior to coming to SLU, I studied at United World College of the Adriatic in Duino, Italy where I gained an IB Diplomma. 
+
+                            I first started coding in high school in Serbia (Gimnazija "Svetozar Marković", Niš), where I learned object oriented programming in C++. My university experience has consisted of using Python, Java, JavaScript, and C while mastering classes in Data Structures, Web Programming, Algorithm Analysis, Computer Graphics, Artificial Neural Networks and Deep Learning, and more. Recently, I've been learning MySQL.
+                            <br> <br>
+                            I enjoy problem solving, and my other interests include mathematics, chess, and philosophy. 
+                            I played chess competitively for about 10 years, with some of my notable achievements being first in Serbia for Girls under 18 (G18) for Solving Chess Problems,
+                            second in Serbia in Standard Chess (G18), representing Serbia in European and World Youth Chess Championships, and more.
+                            <br>
+                            <br>
+                            I'm also a huge music fan. I finished the elementary music school for the acoustic guitar and I took drums lessons for a year.
+                            Additionally, I love going to concerts.
+                            <br><br>
+                            My colleagues would describe as someone who is a fast learner, takes initiative, and has a positive attitude.
+                            My friends would describe me as funny, loyal and reliable.
+                            For further comments, my sister can be contacted for feedback - but only when we are on good terms. :D 
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------portfolio---------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work1.jpg" alt="">
+                        <div class="layer">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/eurovision.jpg" alt="">
+                        <div class="layer">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/social.jpg" alt="">
+                        <div class="layer">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+        <!-----------music books movies------------>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub">Music, Books, and Movies</h1>
+                <div class="services-list">
+                    <div>
+                        <ul>
+                            <li>
+                                <h2>Favourite Song: <a href="https://www.youtube.com/watch?v=8SbUC-UaAxE" target="_blank"> November Rain </a> </h2>
+                                <h2>Favourite Book: <a href="https://www.goodreads.com/book/show/92571.Gargoyles" target="_blank"> Gargoyles </a> </h2>
+                                <h2>Favourite Movie: <a href="https://www.imdb.com/title/tt4846340/" target="_blank"> Hidden Figures </a></h2>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li>
+                                <h2>Currently listening to: <a href="https://www.youtube.com/watch?v=EAeZPiZbpvw" target="_blank"> Nije Sve Tako Sivo </a> </h2>
+                                <h2>Currently reading: <a href="https://www.goodreads.com/book/show/2767052-the-hunger-games" target="_blank"> The Hunger Games </a> </h2>
+                                <h2>Last watched: <a href="https://www.imdb.com/title/tt1679335/" target="_blank"> Trolls </a></h2>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------contact---------->
+        <div id="contact">
+            <div class="container">
+                <div class="column">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                       <!-- <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a> -->
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="Submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links")
+            var tabcontents = document.getElementsByClassName("tab-contents")
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                
+                /*I assign the active-link class to the one that got clicked on */
+                event.currentTarget.classList.add("active-link");
+
+                /*I assign the active-tab class so it shows the points*/
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyX1hlmIu8tQd3wmQwTCAGMMgBZMkjT3YpT1NwGaHUJGMLhN6CqHRnd1Qer9dABR6XCJQ/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+        
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    form.reset()
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 3000)
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+
+    </body>
+</html>

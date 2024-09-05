@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Garamond', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #363841;
+    color: #fff
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/reshi.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.container{
+    padding: 15px 3% 
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 350px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #ffdd5f;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #fdbf62;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%
+}
+
+.header-text{
+    margin-top: 10%;
+    font-size: 21px;
+}
+
+.header-text h1{
+    font-size: 55px;
+    margin-top: 25px;
+}
+
+.header-text h1 span{
+    color: #ffdd5f;
+}
+
+/*----------basics--------*/
+
+#thebasics .sub {
+    font-size: 55px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+#experience.tab-contents.active-tab{
+    margin-left: 370px;
+}
+
+#education.tab-contents.active-tab{
+    margin-left: 700px;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 25px 0 40px; /* 20 from top, 0 from left and right, 40 from bottom */
+}
+
+.tab-links{
+    margin-top: 10px;
+    margin-right: 285px;
+    margin-left: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #fdbf62;
+    position: absolute; /*positioned relative to the nearest positioned ancestor*/
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50% 
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color:#ffdd5f;
+    font-size: 18px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*---------about--------*/
+#about{
+    padding: 30px 0;
+    color: #fff
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#empire{
+    width: 500px;
+    border-radius: 15px;
+}
+
+.about-col-1{
+    flex-basis: 35%; /*width of the column is 35%*/
+}
+
+.about-col-2{
+    flex-basis: 52%;
+
+}
+
+#about .sub {
+    font-size: 55px;
+    font-weight: 600;
+    margin-left: 165px;
+    margin-bottom: 10px;
+}
+
+#about .paragraph {
+    font-size: 16.5px;
+}
+
+/*------music movies books-----*/
+#services{
+    padding: 30px 0;
+}
+
+#services .sub{
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+#services ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+#services div ul li h2{
+    margin-bottom: 15px;
+}
+
+#services div ul li h2 a{
+    font-size: 18px;
+    color:#ffdd5f;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+/*------portfolio-----*/
+#portfolio{
+    padding: 50px 0;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradientrgba((0, 0, 0, 0.6), #ffdd5f);
+    border-radius: 10px;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #ffdd5f;
+    text-decoration: none;
+    font-size: 18px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+/* dakle sve ono sto sam gore pisala za layer se pojavi kad se misom predje preko slike*/
+.work:hover .layer{
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ffdd5f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: backgrund 0.5s;
+}
+
+.btn:hover {
+    background: #ffdd5f;
+}
+
+/*----------contact-----------*/
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 65%;
+}
+
+.btn.btn2 {
+    display: inline-block;
+    background: #ffdd5f;
+}
+
+.contact-right form {
+    width: 70%;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;;
+}
+
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/*-------------- css for small screens ---------*/
+nav .fa {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: url(images/photobg.png);
+    }
+
+    .header-text {
+        margin-top: 51%;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    nav .fa {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background: #ffdd5f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+    nav ul li a{
+        display: block;
+        margin: 25px;
+        color: black;
+    }
+
+    nav ul .fa {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title {
+        font-size: 40px;
+    }
+
+    .about-col-1, .about-col-2{
+        flex-basis:100%
+    }
+
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+
+    .about-col-1 img{
+        max-width:300px;
+        position: relative;
+    }
+
+    .about-col-2 .paragraph{
+        font-size: 14px;
+    }
+
+    .about-col-2 h1.sub{
+        font-size: 40px !important;
+        text-align: left !important;
+        margin-left: 0px !important;
+    }
+
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100% !important;
+    }
+}
+
+#msg{
+    color:green;
+    margin-top: -10px;
+    display: block;
+}
