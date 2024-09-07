@@ -226,6 +226,7 @@ nav ul li a:hover::after{
 
 .work img{
     width: 100%;
+    height: 250px;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -234,7 +235,7 @@ nav ul li a:hover::after{
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradientrgba((0, 0, 0, 0.6), #ffdd5f);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #fdbf62);
     border-radius: 10px;
     position:absolute;
     left: 0;
@@ -244,28 +245,29 @@ nav ul li a:hover::after{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
+    padding: 0 30px;
     text-align: center;
     font-size: 14px;
-    transition: height 0.5s;
+    transition: height 0.4s;
 }
 
 .layer h3{
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
+/*
 .layer a{
     margin-top: 20px;
     color: #ffdd5f;
     text-decoration: none;
     font-size: 18px;
-    background: #fff;
+    background: #c51818;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     text-align: center
-}
+}*/
 
 .work:hover img{
     transform: scale(1.1);
@@ -412,6 +414,24 @@ nav .fa {
 
     .contact-left, .contact-right{
         flex-basis: 100% !important;
+    }
+
+    #experience.tab-contents.active-tab{
+        margin-left: 87px;
+    }
+    
+    #education.tab-contents.active-tab{
+        margin-left: 220px;
+    }
+
+    .tab-links{
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-left: 10px;
+        font-size: 25px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
     }
 }
 
